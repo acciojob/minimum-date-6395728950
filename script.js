@@ -1,5 +1,44 @@
 function minDate(dates) {
-  //write you code here
+ 
+	for(let i =0;i<dates.length;i++){
+                    let str="";
+		for(let j =0;j<dates[i].length;j++){
+			if(dares[i][j]!='/')
+			str+=dates[i][j];
+			
+		}
+		dates[i] =str;
+	}
+
+	let val = new Array(dates.lengh)
+	for(let i =0;i<dates.length;i++){
+
+		val[i]=parseInt(dates[i]);
+	}
+
+	let mini =20241230;
+	for(let j =0;j<val.length;j++){
+		mini = min(mini,val[i]);
+	}
+
+	// convert this mini into string 
+
+	let st = (mini).toString();
+	let s="";
+	int count =4;
+	
+	for(let j =0;j<st.length;j++){
+	    if(count==0)
+		{
+			s+='/';
+			count=2;
+		}
+		
+			s+=st[j];
+		count--;
+		
+	}
+	return s;
 }
 
 // Do not change the code
