@@ -18,7 +18,7 @@ function minDate(dates) {
 
 	let mini =20241230;
 	for(let j =0;j<val.length;j++){
-		mini = Math.min(mini,val[i]);
+		mini = Math.min(mini,val[j]);
 	}
 
 	// convert this mini into string 
