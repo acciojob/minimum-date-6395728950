@@ -3,14 +3,14 @@ function minDate(dates) {
 	for(let i =0;i<dates.length;i++){
                     let str="";
 		for(let j =0;j<dates[i].length;j++){
-			if(dares[i][j]!='/')
+			if(dates[i][j]!='/')
 			str+=dates[i][j];
 			
 		}
 		dates[i] =str;
 	}
 
-	let val = new Array(dates.lengh)
+	let val = new Array(dates.length)
 	for(let i =0;i<dates.length;i++){
 
 		val[i]=parseInt(dates[i]);
@@ -18,14 +18,14 @@ function minDate(dates) {
 
 	let mini =20241230;
 	for(let j =0;j<val.length;j++){
-		mini = min(mini,val[i]);
+		mini = Math.min(mini,val[i]);
 	}
 
 	// convert this mini into string 
 
 	let st = (mini).toString();
 	let s="";
-	int count =4;
+	let count =4;
 	
 	for(let j =0;j<st.length;j++){
 	    if(count==0)
